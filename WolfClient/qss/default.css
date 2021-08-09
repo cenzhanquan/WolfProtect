@@ -1,0 +1,195 @@
+
+QListWidget
+{
+    background-color: rgba(9, 9, 9,150);color: rgba(255, 255, 255,255);
+}
+
+QGroupBox#gb_container{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 129, 233, 205), stop:1 rgba(255, 255, 255, 255));
+
+}
+QGroupBox#gb_container  QPushButton,QSilder,QLabel
+{
+/*背景颜色透明 transparent*/
+    background-color: transparent;
+}
+
+/*搜索框*/
+QLineEdit#le_search:hover{
+    background-color: rgba(10, 10, 10, 150);
+    border-color:rgb(84, 255, 159);
+    border-right-color:rgb(84, 255, 159);
+    border-left-color:rgb(84, 255, 159);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+QLineEdit#le_search{
+    background-color: rgba(10, 10, 10, 150);
+    color:rgb(255,255,255);
+    border-color: rgb(188, 188, 188 );border-width: 1px;border-style: solid;
+}
+
+
+QPushButton#pb_addMusic,QPushButton#pb_deleteMusic,QPushButton#pushButton{
+    background-color: rgba(9, 9, 9,150);color: rgba(255, 255, 255,255);
+    border-color: rgb(188, 188, 188 );border-width: 1px;border-style: solid;
+}
+
+QPushButton#pb_addMusic:pressed,QPushButton#pb_deleteMusic:pressed{
+    background-color: rgba(0, 170, 255,150);
+}
+
+QPushButton#pb_addMusic:hover,QPushButton#pb_deleteMusic:hover{
+    background-color: rgba(0, 170, 255,150);
+}
+/*
+margin是用来隔开元素与元素的间距；padding是用来隔开元素与内容的间隔。
+margin用于布局分开元素使元素与元素互不相干；
+padding用于元素与内容之间的间隔，让内容（文字）与（包裹）元素之间有一段“呼吸距离”。*/
+
+/*播放进度条*/
+QSlider::groove:horizontal {
+    border: 1px solid #4A708B;
+    background: #C0C0C0;
+    height: 5px;
+    border-radius: 1px;
+    padding-left:-1px;
+    padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #B1B1B1, stop:1 #c4c4c4);
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+        stop: 0 #5DCCFF, stop: 1 #1874CD);
+    border: 1px solid #4A708B;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider::add-page:horizontal {
+    background: #575757;
+    border: 0px solid #777;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+        stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA,
+        stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+    background: #00009C;
+    border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+    background: #eee;
+    border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+
+/*滚动条样式*/
+QScrollBar:horizontal{
+    background:#C7E5D6;
+    padding:0px;
+    border-radius:6px;
+    max-height:12px;
+}
+
+QScrollBar::handle:horizontal{
+    background:#9FB7AB;
+    min-width:50px;
+    border-radius:6px;
+}
+
+QScrollBar::handle:horizontal:hover{
+    background:#5F6E66;
+}
+
+QScrollBar::handle:horizontal:pressed{
+    background:#5F6E66;
+}
+
+QScrollBar::add-page:horizontal{
+    background:none;
+}
+
+QScrollBar::sub-page:horizontal{
+    background:none;
+}
+
+QScrollBar::add-line:horizontal{
+    background:none;
+}
+
+QScrollBar::sub-line:horizontal{
+    background:none;
+}
+
+QScrollBar:vertical{
+    background:#C7E5D6;
+    padding:0px;
+    border-radius:6px;
+    max-width:12px;
+}
+
+QScrollBar::handle:vertical{
+    background:#9FB7AB;
+    min-height:50px;
+    border-radius:6px;
+}
+
+QScrollBar::handle:vertical:hover{
+    background:#5F6E66;
+}
+
+QScrollBar::handle:vertical:pressed{
+    background:#5F6E66;
+}
+
+QScrollBar::add-page:vertical{
+    background:none;
+}
+
+QScrollBar::sub-page:vertical{
+    background:none;
+}
+
+QScrollBar::add-line:vertical{
+    background:none;
+}
+
+QScrollBar::sub-line:vertical{
+    background:none;
+}
+
+QScrollArea{
+    border:0px;
+}
+/*end 滚动条样式 end*/
